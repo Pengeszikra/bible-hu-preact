@@ -7,6 +7,7 @@ import ReadBible from './show/ReadBible';
 
 render( (
   <main>
+    <CallbagResearch />
     <ReadBible />
     <BibleStudy />
   </main>

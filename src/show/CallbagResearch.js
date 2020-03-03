@@ -20,6 +20,7 @@ export default () => {
 
   source |> mapTo('--> hasznaltak ') |> forEach(log);
 
+  /*
   useEffect(() => {
     fromEvent(global, 'click') |> forEach(emitter);
   }, []);
@@ -37,6 +38,26 @@ export default () => {
 
     timer(3000, 100) |> take(5) |> map( p => '3 sec after ' + p) |>  forEach(log);
   }, []);
+  */
+
+  global.interval = interval;
+  global.pipe = pipe;
+  global.take = take;
+  global.pipe = pipe;
+  global.take = take;
+  global.fromIter = fromIter;
+  global.forEach = forEach;
+  global.map = map;
+  global.merges = merges;
+  global.merge = merge;
+  global.debounce = debounce;
+  global.fromEvent = fromEvent;
+  global.fromFunction = fromFunction;
+  global.mergeWith = mergeWith;
+  global.timer = timer;
+
+  return null
+
 
   return <pre style={{margin:'2em'}}>{data}<br/>{test}</pre>;
 }
