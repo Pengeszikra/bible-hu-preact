@@ -40,6 +40,8 @@ export default () => {
   }, []);
   */
 
+  
+
   global.interval = interval;
   global.pipe = pipe;
   global.take = take;
